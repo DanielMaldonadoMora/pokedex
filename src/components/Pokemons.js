@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 import Pagination from "./Pagination";
 import PokemonInfo from "./PokemonInfo"
 import SearchBox from "./SearchBox";
+import logo from "../assets/pokedex.png"
+
 
 const Pokemons=()=>{
     const name=useSelector((state)=> state.name);
@@ -52,17 +54,17 @@ const Pokemons=()=>{
 
     return (
         <section>
-            <h1>Pokemons</h1>
-            <p className="welcome">Welcome {name}</p>
-            <Pagination pokePerPage={pokePerPage} totalPoke={pokemons.length} paginate={paginate}/>
+            <div className="header"> 
+            <img src={logo} alt="nosta" className="logo_header" />
+                <h1 >Pokemons</h1>
+            </div>
+            <p className="welcome"> <b>Welcome {name},</b> Aqui encontraras a tus pokemon favoritos </p>
             <SearchBox setType={setType} setPokemons={setPokemons}/>
-            <ul className="character-list">
-           
-                   
-            {typeList()}
-              
-                
+            <Pagination pokePerPage={pokePerPage} totalPoke={pokemons.length} paginate={paginate}/>
+            <ul className="character-list">          
+                {typeList()}
             </ul>
+            <Pagination pokePerPage={pokePerPage} totalPoke={pokemons.length} paginate={paginate}/>
         </section>
 
 

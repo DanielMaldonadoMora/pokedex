@@ -15,13 +15,14 @@ const NameForm = () => {
   };
 
   return (
-    <section >
-      <div >
+    <section className="name_form" >
+      
         <img src={logo} alt="nosta" className="logo" />
+        <div className="form_down">
         <h1 >Pokedex Nacional</h1>
         <form onSubmit={submit}>
           <label>
-            <p>Coloca tu nombre entrenador</p>
+            <p className="start">Coloca tu nombre entrenador</p>
             <input
               
               className="input"
@@ -30,9 +31,9 @@ const NameForm = () => {
               onChange={(e) => setName(e.target.value)}
             />
           </label>
-          <button className="button">Submit</button>
+          <button className="button_submit">Comenzar</button>
         </form>
-      </div>
+       </div>
     </section>
   );
 };

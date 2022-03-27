@@ -12,7 +12,7 @@ const Pagination = ({ pokePerPage, totalPoke, paginate }) => {
       <ul className='pagination'>
         {pageNumbers.map(number => (
           <li key={number} >
-            <button onClick={() => paginate(number)} href='!#' >
+            <button className='page' onClick={() => paginate(number)} href='!#' >
               {number}
             </button>
           </li>

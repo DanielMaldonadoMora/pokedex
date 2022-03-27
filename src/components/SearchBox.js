@@ -19,7 +19,7 @@ const SearchBox = ({setType,setPokemons}) => {
     const [search, setSearch] = useState('')
     return (
         <div className='search_box'>
-            <select name="types" className='input_search' onChange={e => setSearch(e.target.value)}  value={search}>
+            <select className="select" name="types"  onChange={e => setSearch(e.target.value)}  value={search}>
 
                 <option value="0">Todos</option>
                 <option value="1">Normal</option>
@@ -45,7 +45,7 @@ const SearchBox = ({setType,setPokemons}) => {
 
             </select>
             
-            <button className='search_buton' onClick={searchType}>Search</button>
+            <button className='button_submit' onClick={searchType}>Search</button>
         </div>
     );
 };
