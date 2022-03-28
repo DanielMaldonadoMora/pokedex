@@ -45,7 +45,7 @@ const SearchBox = ({setType,setPokemons}) => {
 
             </select>
             
-            <button className='button_submit' onClick={searchType}>Search</button>
+            <button className='button_submit' onClick={searchType}>Filtrar</button>
         </div>
     );
 };

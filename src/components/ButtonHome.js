@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 const ButtonHome = () => {
     return (
-        <Link to="/pokemons/">Home</Link>
+        <Link to="/pokemons/" >
+           <button className='home'>Home</button> 
+        </Link>
         );
 };
 
