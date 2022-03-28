@@ -18,7 +18,7 @@ const typeStatus=(type)=>{
         case "dragon": return("dragon");
         case "dark": return("dark");
         case "fairy": return("fairy");
-
+        default: console.log("sin tipo");
     }
 }
 export default typeStatus

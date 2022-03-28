@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ButtonHome from "./ButtonHome";
-import switchType from '../utils/switchType'
+
 
 
 const PokemonDetail = () => {
@@ -48,7 +48,7 @@ const PokemonDetail = () => {
               <li> <b>Speed</b> {pokemon.stats?.[5].base_stat} </li>
             </ul>
           </li>
-          <li></li>
+         
         </ul>
       </div>
       <ButtonHome/>

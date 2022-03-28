@@ -19,13 +19,12 @@ const Pokemons=()=>{
             .get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=100")
             .then((res)=>setPokemons(res.data.results))
             
-            console.log(pokemons)
     },[]);
     
     useEffect(()=>{
         if(type){
             setPokemons(type)
-            console.log(pokemons)
+           
         }
            
     },[type]);
